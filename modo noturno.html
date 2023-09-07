@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+  }  
+  h2{
+    color: aliceblue;
+  }
+  p{
+    color: aliceblue;
+  }
+    </style>
+    
+    <head>
+        <title>SITE COM ACESSIBILIDADE</title>
+    </head>
+            <body>
+                <h1 style="color: aliceblue;"> SITE COM ACESSIBILIDADE </h1>
+            
+            <h2>Colocando muito texto pra ver a organização</h2>
+            <p id="texto" > Era uma vez um gato curioso chamado Whiskers, que encontrou um mapa antigo escondido no sótão. O mapa o levou a uma ilha misteriosa, onde descobriu um tesouro perdido há séculos. Compartilhando sua riqueza com a aldeia, Whiskers se tornou um herói adorado por todos, provando que a curiosidade pode levar a aventuras incríveis e boas ações.</p>
+            <button>
+                <a href="file:///C:/Users/Sophia/Desktop/HTML%20FILES/atividade.html">MODO NOTURNO ON</a>
+            </button>
+            <button id="aumentar">
+                AUMENTAR LETRAS
+                </button>
+    
+                <button id="diminuir">
+                DIMINUIR LETRAS
+                </button>
+    
+                <script>
+                  const textoElement = document.getElementById('texto');
+                  const aumentarBotao = document.getElementById('aumentar');
+                  const diminuirBotao = document.getElementById('diminuir');
+                  let tamanhoFonte = 20;
+                  aumentarBotao.addEventListener('click', function() {
+                    tamanhoFonte += 2;
+                    textoElement.style.fontSize = tamanhoFonte + 'px';
+                  });
+                  diminuirBotao.addEventListener('click', function() {
+           tamanhoFonte -= 2;
+          textoElement.style.fontSize = tamanhoFonte + 'px';
+                  });
+      </script>
+
+        </body>
+
+</html>
